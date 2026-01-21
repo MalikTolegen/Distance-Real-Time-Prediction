@@ -350,7 +350,7 @@ class DistanceCalculator:
             return None
         
         temp_factor = np.sqrt(1 + temp_C / 273.15)
-        humidity_factor = 1 + 0.00603 * (humi_percent / 100)
+        humidity_factor = 1 + 0.000036 * (humi_percent / 100)
         c = 331.3 * temp_factor * humidity_factor
         return c
     
