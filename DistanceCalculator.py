@@ -30,7 +30,7 @@ class DistanceCalculator:
     """Calculate distance using ToF detection, TX start time, and LSE model."""
     
     # LSE Model parameters
-    BETA_0 = -30  # mm 
+    BETA_0 = -14.057  # mm 
     BETA_1 = 0.5
     
     def __init__(self, sampling_rate=1e6):
